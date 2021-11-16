@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>tn.esprit.spring</groupId>
 	<artifactId>timesheet-devops</artifactId>
-	<version>1.0</version>
+	<version>1.1</version>
 	<name>timesheet-devops</name>
 	<description>timesheet-devops</description>
 	<properties>
@@ -53,5 +53,13 @@
 			</plugin>
 		</plugins>
 	</build>
+
+<distributionManagement>
+    <repository>
+      <id>deploymentRepo</id>
+      <name>Corporate Repository</name>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
+</distributionManagement>
 
 </project>
